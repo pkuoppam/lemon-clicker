@@ -1,7 +1,8 @@
-import Clicker from './pages/Clicker';
+
 import './App.css'
 import { useState } from 'react';
-import Menu from './components/Menu';
+import AppRouter from './components/AppRouter';
+
 
 
 
@@ -22,13 +23,9 @@ function App() {
   
 
   return (
-    <div className="root">
-      <div className="root_content">
-        <Clicker stats={stats} handleClick={handleClick} />
-      </div>
-      <Menu items={stats.itemstobuy} />
-    </div>
+    <AppRouter stats={stats} handleClick={handleClick} />
   )
+
 
 
   
